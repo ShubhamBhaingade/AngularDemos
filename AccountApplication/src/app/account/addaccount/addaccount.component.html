@@ -1,0 +1,32 @@
+<div style="display: flex; justify-content: space-evenly">
+    <form (ngSubmit)="doSubmit()">
+
+        <table>
+            <tr>
+                <td>Account Balance</td>
+                <td><input type="text" name="bal" id="bal" [(ngModel)]="dto.balance"></td>
+                
+            </tr>
+            <tr>
+                <td>Account Location</td>
+                <td><input type="text" name="loc" id="loc" [(ngModel)]="dto.loc"></td>
+            </tr>
+            <tr>
+                <td>Mobile Pin</td>
+                <td><input type="number" name="mp" id="mp" [(ngModel)]="dto.mobilePin"></td>
+            </tr>
+            <tr>
+                <td>Account Type</td>
+                <td><input type="text" name="accType" id="accType" [(ngModel)]="dto.accountType"></td>
+            </tr>
+            <tr>
+                <td>PanNumber</td>
+                <td><input type="text" name="pn" id="pn" [(ngModel)]="dto.panNumber"></td>
+            </tr>
+            
+        </table>
+
+        <button type="submit" value="Add Account">Add Account</button>
+
+    </form>
+</div>

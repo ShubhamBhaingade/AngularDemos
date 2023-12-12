@@ -1,0 +1,72 @@
+/* reservation-form.css */
+
+/* Style the form container */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #FF5733;
+    border-radius: 10px;
+    background-color: #FFE4B5;
+  }
+  
+  /* Style the form labels */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #FF5733; /* Orange color */
+  }
+  
+  /* Style the form inputs */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #FF5733;
+    border-radius: 5px;
+  }
+  
+  /* Style the error messages */
+  div.error {
+    color: #FF0000; /* Red color */
+    font-size: 14px;
+    margin-top: -10px;
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Style the "Home" link */
+  a {
+    text-decoration: none;
+    color: #007BFF; /* Blue color */
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #FF5733; /* Orange color on hover */
+  }
+
+  div.error {
+    color: #FF0000; /* Red color for error messages */
+    font-size: 14px;
+    margin-top: -10px;
+  }
+  

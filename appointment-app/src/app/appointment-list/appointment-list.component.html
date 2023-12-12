@@ -1,0 +1,58 @@
+<div class="container">
+
+    <div class="card mt-3">
+        <div class="row">
+
+            <div class="col">
+                <h2>Create A New Appointment</h2>
+            </div>
+
+        </div>
+
+        <div class="row mt-6">
+
+            <div>
+                <input [(ngModel)]="newAppointmentTitle" placeholder="Appointment Description">
+                <input [(ngModel)]="newAppointmentDate" type="date" placeholder="Appointment Date">
+                <button (click)="addAppointment()" class="btn btn-secondary">Add</button>
+            </div>
+            <button (click)="showAppointment()">{{text}}</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div  >
+    
+    <table *ngIf="isAvailiable">   
+        <tr *ngFor="let c of appointment;index as i">
+            <td>{{c.id}}</td>
+            <td>{{c.title}}</td>
+            <td>{{c.date}}</td>
+            <button (click)="deleteAppointment(i)">Delete</button>
+        </tr>
+    </table>
+
+</div>

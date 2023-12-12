@@ -1,0 +1,28 @@
+<div>
+    <h1>MY Account App</h1>
+    <table>
+        <tr>
+            <td>UserName</td>
+            <td><input type="text" value="a" #un></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input type="text" value="a" #pass></td>
+        </tr>
+        <tr>
+            <button (click)="doLogin(un.value,pass.value)">Login</button>
+        </tr>
+    </table>
+    <div *ngIf="role=='admin'">
+        <a routerLink="addAccount">Add Account</a><br><br>
+        <a routerLink="view">View Account</a><br>
+        
+    </div>
+    <div *ngIf="role=='user'">
+        
+        <a routerLink="#">View Trasaction</a><br>
+        <a routerLink="#">Feedback</a><br>
+    </div>
+    
+</div>
+<router-outlet></router-outlet>

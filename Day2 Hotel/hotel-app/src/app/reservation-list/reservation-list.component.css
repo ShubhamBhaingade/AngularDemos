@@ -1,0 +1,47 @@
+/* reservation-list.css */
+
+/* Style the buttons */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the table rows */
+  tr {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  tr:hover {
+    background-color: #eee;
+  }
+  
+  /* Style the table data cells */
+  td {
+    padding: 10px;
+  }
+  
+  /* Add space between buttons and table data */
+  td button {
+    margin-left: 5px;
+  }
+  
+  /* Style the "Edit" button with a different color */
+  button.edit-button {
+    background-color: #28a745;
+  }
+  
+  button.edit-button:hover {
+    background-color: #1e7e34;
+  }
+  

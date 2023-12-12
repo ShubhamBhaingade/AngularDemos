@@ -1,0 +1,13 @@
+<button (click)="getData()">Refresh</button>
+<table *ngFor="let a of allAccounts">
+    <tr>
+        <td>{{a.balance}}</td>
+        <td>{{a.loc}}</td>
+        <td>{{a.mobilePin}}</td>
+        <td>{{a.accountType}}</td>
+        <td>{{a.pan}}</td>
+        <td>{{a.status}}</td>
+
+    </tr>
+</table>
+

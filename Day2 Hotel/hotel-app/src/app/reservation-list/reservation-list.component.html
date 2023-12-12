@@ -1,0 +1,30 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" >
+</head>
+<button (click)="showRes()" >{{text}}</button>
+
+<table *ngIf="reservations.length">   
+    <tr *ngFor="let c of reservations ;index as i">
+        <td>checkInDate:{{c.checkInDate}}</td><br>
+        <td>checkOutDate:{{c.checkOutDate}}</td>
+        <td>guestName:{{c.guestName}}</td>
+        <td>guestEmail:{{c.guestEmail}}</td>
+        <td>roomNumber:{{c.roomNumber}}</td>
+        <button (click)="delete(c.id)">Delete</button>
+        <button [routerLink]="['/edit',c.id]">Edit</button>
+        
+    </tr>
+    
+   
+</table>
+</html>
+
+
+
+
+<!-- checkInDate:Date,
+    checkOutDate:Date,
+    guestName:string,
+    guestEmail:string,
+    roomNumber:number -->
